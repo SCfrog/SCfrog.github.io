@@ -32,7 +32,12 @@
   onclick="draw(event)" onmousemove="draw(event)"> </canvas>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script>var balls = [ ];
+<script>
+$("h1").hide()
+$("h1").slideDown(600)
+</script>
+  <script>
+    var balls = [ ];
 setInterval( animate, 33 );
 
 class Ball {
@@ -113,7 +118,5 @@ function animate(){
 function clearScreen(){
   balls = [ ] ;
 }
-$("h1").hide()
-$("h1").slideDown(600)
-</script>
+  </script>
 </html>
